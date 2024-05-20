@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ProBook Laptop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(https://hgrunt.xyz/img/bgstar.gif); 
+            background-size: auto;
+            margin: 0;
+            overflow-x: hidden;
+            padding: 0;
+            cursor: url(https://hgrunt.xyz/img/lambda.png), auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            background-color: #a3c0ff; 
+            border-radius: 1em;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            width: 80%;
+            max-width: 800px;
+            overflow: auto; /* Ensure content is scrollable if too large */
+        }
+        header {
+            background-color: #3f62ff;
+            color: white;
+            background-image: url(https://hgrunt.xyz/img/bgstar.gif); 
+            background-size: auto;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 1em 1em 0 0;
+        }
+        .centered {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center; 
+        }
+        h1 {
+            color: #3f62ff;
+        }
+        p {
+            line-height: 1.6;
+            margin: 0;
+        }
+        .footer {
+            background-color: white;
+            padding: 20px;
+            background-image: url(https://hgrunt.xyz/img/bgstar.gif); 
+            background-size: auto;
+            color: aliceblue;
+            border-radius: 0 0 1em 1em;
+            margin-top: 20px;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            .content {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header> <!-- i am making the list on two because it seems that i cannot make the html to show the whole thing if not resized-->
+            <h1>My ProBook Laptop</h1>
+        </header>
+        <main>
+            <h2>About My Laptop</h2>
+            <button type="button" id="nerd" onClick="NerdInfo()">Nerd Info</button>
+            <div id="nerdo"></div>
+            <div id="nerdo1"></div>
+            <div id="nerdo2"></div>
+            <div id="nerdo3"></div>
+            <p>Welcome to my ProBook laptop page! Here are some details about my trusty machine:</p>
+            <ul>
+                <li><strong>Model:</strong> ProBook 4530s</li>
+                <li><strong>Processor:</strong> Intel Sandy Bridge</li>
+                <li><strong>Year:</strong> 2011</li>
+                <li><strong>Operating System:</strong> Ubuntu (sadly doesn't boot) :( </li>
+                <li><strong>Boot Order:</strong> Legacy</li>
+            </ul>
+    </div>
+    <div class="content">
+        
+            <h2>Fun Facts</h2>
+            <div class="centered">
+                <div>
+                    <p>This Laptop started as the "Family Computer" and has been used for testing purposes since 2022</p>
+                    <p>This Laptop has Windows XP before and also windows 7. Now it is in retirement with Ubuntu</p>
+                </div>
+                <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03178757.png" alt="ProBook Laptop Image">
+                <div>
+                    <p>Did you know that the ProBook 4530s was known for its durability and reliability? It's been a loyal companion through many computing tasks!</p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zdkPam7ZL-M?si=Dd4tJqsgAclOn9YC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <div class="footer">
+            <h1 style="color: red;">But we are not done yet...</h1>
+            <p>This Strong Laptop has been trying to run <b onclick="Hackintosh()">Hackintosh </b>Since I started using it </p>
+            <p>Check out some more things created by me:</p>
+            <a href="https://memelian4.itch.io/">My Itch.io</a><br><br><br>
+            <img src="https://hgrunt.xyz/img/ie.gif" alt="Very cool windows IE thingy">
+        </div>
+    </div>
+    <script>
+        function NerdInfo() {
+            document.getElementById("nerdo").innerHTML = "CPU: Intel Core i3-2310M (2.10 GHz, 3MB Cache)";
+            document.getElementById("nerdo1").innerHTML = "RAM: 12GB (1x8024MB + 1x8048MB) DDR 3 1333Mhz";
+            document.getElementById("nerdo2").innerHTML = "GPU: Intel HD 3000 Graphics";
+            document.getElementById("nerdo3").innerHTML = "SSD: 240 GB Samsung EVO";
+        }
+        function Hackintosh() {
+            window.open("https://dortania.github.io/OpenCore-Install-Guide/");
+        }
+    </script>
+</body>
+</html>
